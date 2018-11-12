@@ -40,6 +40,31 @@ To install it, run:
 go get gopkg.in/src-d/go-mysql-server.v0
 ```
 
+## Dependencies
+
+This version of `go-mysql-server` is compatible with version `v1.1.0` of `gopkg.in/src-d/go-vitess.v1`. You can use a dependency manager like [go 1.11 modules](https://github.com/golang/go/wiki/Modules) or [go dep](https://github.com/golang/dep) to fix the version. Alternatively you can download the specific version to your `GOPATH`:
+
+* go 1.11 modules:
+
+```
+go mod edit -require gopkg.in/src-d/go-mysql-server.v0@v0.1.1 -require gopkg.in/src-d/go-vitess.v1@v1.1.0
+```
+
+* go dep:
+
+```
+dep ensure -v -add gopkg.in/src-d/go-mysql-server.v0@v0.1.1 gopkg.in/src-d/go-vitess.v1/mysql@ac2d481a3c59a3f203727d92dbb5e1f9ac54e5b4
+```
+
+* no dependency manager:
+
+```
+go get gopkg.in/src-d/go-vitess.v1
+cd $GOPATH/src/gopkg.in/src-d/go-vitess.v1
+git checkout v1.1.0
+cd -
+```
+
 ## Documentation
 
 * [go-mysql-server godoc](https://godoc.org/github.com/src-d/go-mysql-server)
