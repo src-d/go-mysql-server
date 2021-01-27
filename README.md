@@ -1,3 +1,5 @@
+_**Notice: This repository is no longer actively maintained, and no further updates will be done, nor issues/PRs will be answered or attended. An alternative actively maintained can be found at https://github.com/dolthub/go-mysql-server repository.**_
+
 # go-mysql-server
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <a href="https://travis-ci.com/src-d/go-mysql-server"><img alt="Build Status" src="https://travis-ci.com/src-d/go-mysql-server.svg?branch=master" /></a>
